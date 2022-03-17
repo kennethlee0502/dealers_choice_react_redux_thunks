@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 const { STRING } = Sequelize.DataTypes;
 const sequelize = new Sequelize(
-  process.env.DATABASE || "postgres://localhost/acme_react_redux"
+  process.env.DATABASE_URL || "postgres://localhost/acme_react_redux"
 );
 
 const faker = require("faker");
